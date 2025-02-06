@@ -1,0 +1,64 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "task": "Morning Walk",
+      "details": "Take a refreshing walk in the park.",
+      "timeRange": "6:30AM - 7:00AM"
+    },
+    {
+      "id": 2,
+      "task": "Breakfast",
+      "details": "Have a healthy breakfast with fruits and protein.",
+      "timeRange": "7:30AM - 8:00AM"
+    },
+    {
+      "id": 3,
+      "task": "Work",
+      "details": "Complete pending tasks and attend meetings.",
+      "timeRange": "9:00AM - 12:00PM"
+    },
+    {
+      "id": 4,
+      "task": "Lunch Break",
+      "details": "Enjoy a nutritious meal and take a short break.",
+      "timeRange": "12:30PM - 1:00PM"
+    },
+    {
+      "id": 5,
+      "task": "Reading",
+      "details": "Read a book or an article related to personal growth.",
+      "timeRange": "2:00PM - 3:00PM"
+    },
+    {
+      "id": 6,
+      "task": "Afternoon Work",
+      "details": "Continue working on projects and emails.",
+      "timeRange": "3:30PM - 5:00PM"
+    },
+    {
+      "id": 7,
+      "task": "Exercise",
+      "details": "Gym workout or yoga session for fitness.",
+      "timeRange": "5:30PM - 6:30PM"
+    },
+    {
+      "id": 8,
+      "task": "Dinner",
+      "details": "Have a light and balanced dinner.",
+      "timeRange": "7:00PM - 7:30PM"
+    },
+    {
+      "id": 9,
+      "task": "Leisure Time",
+      "details": "Watch a movie, listen to music, or spend time with family.",
+      "timeRange": "8:00PM - 9:00PM"
+    },
+    {
+      "id": 10,
+      "task": "Sleep",
+      "details": "Wind down and get ready for bed.",
+      "timeRange": "10:00PM - 6:00AM"
+    }
+  ]  
+}

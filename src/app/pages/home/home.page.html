@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <div class="header">
+    <h1>Hi Phil!</h1>
+    <h4>February 03, 2025</h4>
+  </div>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="body">
+    <div class="body-currentdate">
+      <h4>Current Date</h4>
+      <ion-input class="body-currentdate-input" [value]="selectedDate"></ion-input>
+      <ion-modal [keepContentsMounted]="true">
+        <ng-template>
+          <ion-datetime id="datetime"></ion-datetime>
+        </ng-template>
+      </ion-modal>
+    </div>
+    <div class="body-calendar">
+      <h4>Sun <br><span>02</span></h4>
+      <h4 class="active">Mon <br><span>03</span></h4>
+      <h4>Tue <br><span>04</span></h4>
+      <h4>Wed <br><span>05</span></h4>
+      <h4>Thu <br><span>06</span></h4>
+      <h4>Fri <br><span>07</span></h4>
+      <h4>Sun <br><span>08</span></h4>
+    </div>
+    <div class="body-tasks">
+      <h1>Tasks</h1>
+      <div class="body-tasks-buttons">
+          <button class="active">All</button>
+          <button>Done</button>
+          <button>Undone</button>
+      </div>
+      <div class="body-tasks-container">
+        <div *ngFor="let task of taskList" class="body-tasks-container-task">
+          <div class="body-tasks-container-task__info">
+            <h2>{{ task.task }}</h2>
+            <h4>{{ task.details }}</h4>
+            <h4 class="time">{{ task.timeRange }}</h4>
+          </div>
+          <div class="body-tasks-container-task__button">
+            <ion-icon name="trash"></ion-icon>
+            <ion-icon name="checkmark-circle"></ion-icon>
+            <ion-icon name="create"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
