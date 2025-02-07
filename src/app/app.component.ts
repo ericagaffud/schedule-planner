@@ -1,8 +1,7 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import * as icons from 'ionicons/icons';
-import { JsonService } from './services/json/json.service';
+import { trash, checkmarkCircle, create, heart } from 'ionicons/icons';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +13,6 @@ import { JsonService } from './services/json/json.service';
 })
 export class AppComponent {
   constructor() {
-    addIcons(icons);
+    addIcons({trash, checkmarkCircle, create, heart});
   }
 }

@@ -33,16 +33,17 @@
           <button>Undone</button>
       </div>
       <div class="body-tasks-container">
-        <div *ngFor="let task of taskList" class="body-tasks-container-task">
+        <div *ngFor="let task of taskList" class="body-tasks-container-task" id="task{{ task.id }}">
           <div class="body-tasks-container-task__info">
-            <h2>{{ task.task }}</h2>
-            <h4>{{ task.details }}</h4>
-            <h4 class="time">{{ task.timeRange }}</h4>
+            <ion-input type="text" id="name" name="task" value="{{ task.task }}" disabled></ion-input>
+            <ion-input type="text" id="details" name="details" value="{{ task.details }}" disabled></ion-input>
+            <ion-input type="text" id="timeRange" name="timeRange" value="{{ task.timeRange }}" disabled></ion-input>
           </div>
           <div class="body-tasks-container-task__button">
             <ion-icon name="trash"></ion-icon>
             <ion-icon name="checkmark-circle"></ion-icon>
-            <ion-icon name="create"></ion-icon>
+            <ion-icon name="create" (click)="editTask(task.id)"></ion-icon>
+            <ion-icon name="heart" class="hidden" (click)="saveTask(task.id)"></ion-icon>
           </div>
         </div>
       </div>
